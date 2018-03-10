@@ -66,6 +66,178 @@
 ```
 ブラウザのタブに「Tab Title」、ブラウザのメイン画面に「Hello World.」が表示されましたね。
 
+#### STEP3 本文に見出しをつけてみる
+「h1」のタグで見出しをつけることができます。
+
+```html
+<html>
+    <head>
+        <title>
+            Tab Title
+        </title>
+    </head>
+    <body>
+        <h1>見出し1</h1>
+        <p>Hello World.</p>
+    </body>
+</html>
+```
+同時に普通の文は「p」タグをつけておきましょう。
+
+`ページのデザインを編集したくなった時に、この「p」タグが役立ちます。改行したいときにも使えます。`
+
+ちなみに見出しの大きさは、番号によって選べます。
+
+
+```html
+<html>
+    <head>
+        <title>
+            Tab Title
+        </title>
+    </head>
+    <body>
+        <h1>見出し1</h1>
+        <h2>見出し2</h2>
+        <h3>見出し3</h3>
+        <h4>見出し4</h4>
+        <h5>見出し5</h5>
+        <h6>見出し6</h6>
+        <p>Hello World.</p>
+    </body>
+</html>
+```
+
+#### STEP4 本文にボタンをつけてみる
+ボタンをつけてみましょう。
+
+`特に何も設定していないため、ボタンを押下しても何も起こりません。今はまだ飾りです。押下して何かイベントを起こす話はまた後日…`
+```html
+<html>
+    <head>
+        <title>
+            Tab Title
+        </title>
+    </head>
+    <body>
+        <h1>見出し1</h1>
+        <p>Hello World.</p>
+        <button>Button</button>
+    </body>
+</html>
+```
+
+#### STEP5 本文に表を作成してみる
+「table」タグで表を作ってみましょう
+```html
+<html>
+    <head>
+        <title>
+            Tab Title
+        </title>
+    </head>
+    <body>
+        <h1>見出し1</h1>
+        <p>Hello World.</p>
+        <button>Button</button>
+        <table>
+            <tr>
+                <td>1行1列</td>
+                <td>1行2列</td>
+                <td>1行3列</td>
+            </tr>
+            <tr>
+                <td>2行1列</td>
+                <td>2行2列</td>
+                <td>2行3列</td>
+            </tr>
+        </table>
+    </body>
+</html>
+```
+「tr」タグで行を指定、「td」タグで列を指定できました。
+
+このままでは表っぽくないですね、青い線を引いてみます。
+```html
+<html>
+    <head>
+        <title>
+            Tab Title
+        </title>
+        <style>
+            td {border: 1px blue solid;}
+        </style>
+    </head>
+    <body>
+        <h1>見出し1</h1>
+        <p>Hello World.</p>
+        <button>Button</button>
+        <table>
+            <tr>
+                <td>1行1列</td>
+                <td>1行2列</td>
+                <td>1行3列</td>
+            </tr>
+            <tr>
+                <td>2行1列</td>
+                <td>2行2列</td>
+                <td>2行3列</td>
+            </tr>
+        </table>
+    </body>
+</html>
+```
+見た目を変えたいときには、「style」タグを使用します。
+
+今回は、「td」タグに対して「border(線)の太さ1px、色blue、線の種類solid(実線)」を設定しています。
+
+まだ表っぽくないですね。線の間の隙間を埋めてみます。
+
+```html
+<html>
+    <head>
+        <title>
+            Tab Title
+        </title>
+        <style>
+            table {border-collapse: collapse;}
+            td {border: 1px blue solid;}
+        </style>
+    </head>
+    <body>
+        <h1>見出し1</h1>
+        <p>Hello World.</p>
+        <button>Button</button>
+        <table>
+            <tr>
+                <td>1行1列</td>
+                <td>1行2列</td>
+                <td>1行3列</td>
+            </tr>
+            <tr>
+                <td>2行1列</td>
+                <td>2行2列</td>
+                <td>2行3列</td>
+            </tr>
+        </table>
+    </body>
+</html>
+```
+「table」タグに隙間いらないよと設定してあげます。
+
+***おめでとうございます！いつの間にかCSS言語も習得しました***
+
+CSS言語とは、「style」タグの中に書いた言語です。
+
+ここだけ少し書き方が異なりますね。
+
+HTML言語とCSS言語の組み合わせで、Webページ作成は大体できます。
+
+HTMLの基本的なタグは、下記のサイトを参照することをおすすめします。
+
+http://www.tagindex.com/html_tag/elements/ 
+
+
 ### おわりに
 パソコンが扱えることは、この先役に立つ機会は多いと思います。
 
